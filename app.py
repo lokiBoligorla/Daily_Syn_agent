@@ -51,30 +51,31 @@ h1, h2, h3 {
     letter-spacing: -0.025em;
 }
 
-/* Glowing text */
+/* Glowing text (Responsive sizing for mobile devices) */
 .title-gradient {
     background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #1d4ed8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.8rem;
+    font-size: clamp(2.0rem, 6vw, 2.8rem);
     font-weight: 800;
     margin-bottom: 0.2rem;
+    line-height: 1.2;
 }
 
 .subtitle {
     color: #94a3b8;
-    font-size: 1.1rem;
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
     margin-bottom: 2rem;
 }
 
-/* Glassmorphism Cards */
+/* Glassmorphism Cards (Responsive padding) */
 .glass-card {
     background: rgba(30, 41, 59, 0.45);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
-    padding: 24px;
+    padding: clamp(14px, 4vw, 24px);
     margin-bottom: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
@@ -84,7 +85,7 @@ h1, h2, h3 {
     border: 1px solid rgba(59, 130, 246, 0.2);
     border-radius: 12px;
     font-family: monospace;
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
     padding: 15px;
     color: #38bdf8;
     max-height: 250px;
@@ -98,9 +99,9 @@ div.stButton > button:first-child {
     color: #ffffff;
     border: none;
     border-radius: 8px;
-    padding: 12px 28px;
+    padding: 12px clamp(16px, 3vw, 28px);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2.8vw, 1rem);
     cursor: pointer;
     box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.4);
     transition: all 0.3s ease;
