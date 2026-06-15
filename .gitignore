@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Streamlit local configurations
+.streamlit/
+
+# Secrets and User Profile Local Storage
+.env
+dailysync_profile.json
+
+# System / IDE config files
+.idea/
+.vscode/
+.DS_Store
+
+# Temporary files & logs
+scratch/
+.gemini/
+*.log
